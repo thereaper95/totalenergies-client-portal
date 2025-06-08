@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espace Client TotalEnergies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+    header {
+      background-color: #e60000;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #e60000;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 15px;
+      background-color: #e60000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Espace Client TotalEnergies</h1>
+</header>
+
+<section>
+  <h2>1. Mes informations personnelles</h2>
+  <label>Nom</label>
+  <input type="text" placeholder="Dupont">
+  <label>Prénom</label>
+  <input type="text" placeholder="Jean">
+  <label>Email</label>
+  <input type="email" placeholder="jean.dupont@email.com">
+  <label>Téléphone</label>
+  <input type="tel" placeholder="0601020304">
+  <label>Adresse de consommation</label>
+  <textarea placeholder="10 rue de l'énergie, 75000 Paris"></textarea>
+  <label>Type d’abonnement</label>
+  <select>
+    <option>Électricité</option>
+    <option>Gaz</option>
+    <option>Duo Électricité + Gaz</option>
+  </select>
+  <button>Enregistrer</button>
+</section>
+
+<section>
+  <h2>2. Soumettre une autorelève</h2>
+  <label>Date de la relève</label>
+  <input type="date">
+  <label>Index relevé (kWh)</label>
+  <input type="number">
+  <label>Photo du compteur (optionnel)</label>
+  <input type="file">
+  <button>Soumettre mon autorelève</button>
+</section>
+
+<section>
+  <h2>3. Contester un index facturé</h2>
+  <p><strong>Dernier index facturé :</strong> 5240 kWh le 01/05/2025</p>
+  <label>Index contesté (kWh)</label>
+  <input type="number">
+  <label>Motif de contestation</label>
+  <textarea placeholder="Ex : Mauvais relevé estimé, compteur inaccessible..."></textarea>
+  <label>Pièce(s) justificative(s)</label>
+  <input type="file" multiple>
+  <button>Envoyer la contestation</button>
+</section>
+
+</body>
+</html>
